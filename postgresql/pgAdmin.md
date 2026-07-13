@@ -60,18 +60,19 @@ $ sudo nano /etc/phppgadmin/config.inc.php
 
 Você quer manter o phpMyAdmin no diretório /var/www/html e colocar o phpPgAdmin em outro local, para não misturar os dois.
 Sem problema! Você pode instalar o phpPgAdmin em qualquer pasta fora de /var/www/html, como por exemplo em:
+
 /opt/phppgadmin
-
-
 /srv/phppgadmin
 
+Ou mesmo criando um diretório separado:
+/var/www/phppgadmin
 
-Ou mesmo /var/www/phppgadmin
+mas vamos la que aqui estamos instalando primeiro o pgadmin
 
 
 Depois disso, cria-se um Alias ou um VirtualHost para acessá-lo normalmente via navegador.
 
-✅ Como instalar o phpPgAdmin em outro diretório com Apache
+### ✅ Como instalar o phpPgAdmin em outro diretório com Apache
 ✅ 1. Escolha o diretório
 Exemplo: /srv/phppgadmin
 sudo mkdir -p /srv/phppgadmin
@@ -231,11 +232,3 @@ Procure e ajuste:
 listen_addresses = 'localhost'
 Depois reinicie o PostgreSQL:
 sudo systemctl restart postgresql
-
-
-6. Acessar o phpPgAdmin
-Abra o navegador e acesse:
-http://localhost/phppgadmin
-Ou:
-http://<seu-ip>/phppgadmin
-
