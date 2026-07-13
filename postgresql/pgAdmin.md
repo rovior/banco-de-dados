@@ -10,9 +10,9 @@ docker run -p 5050:80 \
     -d dpage/pgadmin4
 ```
 **2. Acessar no navegador**
-```
+
 http://seu-ip:5050
-```
+
 - **Login**: `admin@example.com`
 - **Senha**: `senha_admin`
 
